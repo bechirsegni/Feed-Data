@@ -3,7 +3,7 @@ const CHART = document.getElementById('lineChart');
 var keys = [];
 var values = [];
 
-$.getJSON("vox.json", function(json) {
+$.getJSON("vice.json", function(json) {
   $.each(json, function(k, v) {
     keys.push(k);
     values.push(v);

@@ -9,10 +9,7 @@ require_relative 'count'
 
 
 
-var  = checker("vox.com")
-doc  = get_body(var)
-rss  = find_rss(doc)
-feed = check_content(rss)
-file = parser(feed)
+var  = rss_search("https://www.technologyreview.com/topnews.rss")
+file = parser(var)
 path = words(file)
 json(path, file)
